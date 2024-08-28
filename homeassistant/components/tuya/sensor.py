@@ -1156,6 +1156,42 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             device_class=SensorDeviceClass.TEMPERATURE,
             state_class=SensorStateClass.MEASUREMENT,
         ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_AROUND,
+            name="Ambient Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_BOTTOM,
+            name="Minimum Configurable Target Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_COILER,
+            name="Evaporator Coil Pipe Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_EFFLUENT,
+            name="Outlet Water Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_TOP,
+            name="Maximum Configurable Target Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TEMP_VENTING,
+            name="Exhaust Gas Temperature",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
     ),
 }
 
